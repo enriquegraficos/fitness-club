@@ -1,0 +1,9 @@
+.nav .menu .link-menu:hover{
+    color: yellow;
+}
+
+.nav .menu .is-active{
+    color: yellow;
+
+}
+

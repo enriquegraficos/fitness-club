@@ -1,0 +1,47 @@
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px;
+}
+.footer .player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+  
+}
+footer .player .player-button{
+    display: flex;
+    width: 40px;
+    height: 40px; 
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+footer p{
+    font-family: 'Montserrat', sans-serif;
+}
+.progress{
+    width: 100px;
+    border: 6px solid #DFA100;
+    border-radius:50px ;
+}
+
+.social-media{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3/3;
+}
+
+
+@media (max-width:750px){
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(3, 1fr) ;
+    }
+}

@@ -1,0 +1,92 @@
+.nav{
+
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: 103px;
+        grid-template-areas: 
+        "logo menu icons";    
+        justify-content: center;    
+        align-content: center;
+        gap: 5px;
+       
+       
+       
+}
+
+.logo-container
+    { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: logo;
+    }
+
+.logo-container img{
+    position: relative;
+    width: 232px;
+    height: 48.5px;
+    margin: 25x;
+  
+    /* left: 68px;
+    top: 55px; */
+
+}
+.nav .menu{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size:1.5rem ;
+    justify-content: center;
+    align-items: center;
+    grid-area: menu;
+   
+  
+
+}
+
+.icons{
+    grid-area: icons;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+  
+}
+
+
+.nav .menu li a{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (max-width:1200px){
+    .nav{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "logo"
+        "menu"
+        "icons";    
+        justify-content: center;    
+        align-content: center;
+        grid-template-rows: 103px;
+       
+}
+
+.nav .menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+
+}
+
+}
